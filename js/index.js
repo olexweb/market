@@ -1,0 +1,84 @@
+var tooltipTriggerlist = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltiplist = tooltipTriggerlist.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+jQuery('.slider-item').owlCarousel({
+    loop:true,
+    margin:10,
+    rtl:true,
+    nav:false,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:2,
+        }
+    }
+});
+
+jQuery('.slider-content').owlCarousel({
+    loop:true,
+    margin:10,
+    rtl:true,
+    nav:false,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
+});
+
+jQuery('.cat-slider-item').owlCarousel({
+    loop:true,
+    margin:10,
+    rtl:true,
+    nav:false,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:4,
+        }
+    }
+});
+
+jQuery('.product-img').owlCarousel({
+    loop:true,
+    margin:10,
+    rtl:true,
+    nav:false,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
+});
